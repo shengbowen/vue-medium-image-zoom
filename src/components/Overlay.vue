@@ -3,18 +3,7 @@
 </template>
 
 <script>
-const transitionDuration = 300;
-
-const defaultStyle = {
-  position: 'absolute',
-  top: 0,
-  right: 0,
-  bottom: 0,
-  left: 0,
-  backgroundColor: '#fff',
-  opacity: 0,
-  transition: `opacity ${ transitionDuration }`,
-};
+import defaults from './defaults';
 
 export default {
   props: {
@@ -34,10 +23,11 @@ export default {
 
   computed: {
     customStyle() {
-      const opacity = this.isVisible & 1; // convert bool to 0 or 1
+      // convert bool to 0 or 1
+      const opacity = this.isVisible & 1; // eslint-disable-line
       return Object.assign(
         {},
-        defaultStyle,
+        defaults.styles.overlay,
         { opacity },
         this.defaultStyle,
       );
