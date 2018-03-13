@@ -2,6 +2,8 @@
 
 > a medium like image zoom component by vue
 
+参考 https://github.com/rpearce/react-medium-image-zoom ，用vue实现了一遍
+
 ## Build Setup
 
 ``` bash
