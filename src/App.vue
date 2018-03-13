@@ -59,7 +59,6 @@
 </template>
 
 <script>
-import Hello from './components/Hello';
 import ImageZoom from './components/ImageZoom';
 
 const src = require('./assets/bridge.jpg');
@@ -68,7 +67,6 @@ const bigsrc = require('./assets/bridge-big.jpg');
 export default {
   name: 'app',
   components: {
-    Hello,
     ImageZoom,
   },
   data() {
